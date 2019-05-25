@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/cardView"
+	android:layout_width="match_parent"
+	android:clickable="true"
+	app:cardCornerRadius="12dp"
+	android:foreground="?android:attr/selectableItemBackground"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	app:cardUseCompatPadding="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center|center_vertical|center_horizontal"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="标题"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:gravity="left"
+			android:textSize="20sp"
+			android:textColor="#FF000000"
+			android:id="@+id/Title"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Dex_Smali编辑器"
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_marginTop="10dp"
+			android:gravity="center"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Dex_Dexlib编辑器"
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_marginTop="10dp"
+			android:gravity="center"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="翻译修改模式"
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_marginTop="10dp"
+			android:gravity="center"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Dex2Jar"
+			android:background="?android:attr/selectableItemBackground"
+			android:layout_marginTop="10dp"
+			android:gravity="center"
+			android:id="@+id/d2j"/>
+
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>
+

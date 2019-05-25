@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/cardView"
+	android:layout_width="match_parent"
+	android:clickable="true"
+	app:cardCornerRadius="12dp"
+	android:foreground="?android:attr/selectableItemBackground"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	app:cardUseCompatPadding="true">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center|center_vertical|center_horizontal"
+		android:padding="5dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="标题"
+			android:layout_marginTop="10dp"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:gravity="left"
+			android:textSize="20sp"
+			android:textColor="#FF000000"
+			android:id="@+id/Title"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_marginTop="10dp"
+			android:id="@+id/Name"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:paddingTop="4dp"
+			android:layout_alignParentBottom="true"
+			android:paddingBottom="4dp"
+			android:paddingRight="4dp"
+			android:paddingLeft="4dp"
+			android:showDividers="middle"
+			android:gravity="center|center_vertical|center_horizontal">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="64dp"
+				android:text="取消"
+				android:clickable="true"
+				android:foreground="?android:attr/selectableItemBackground"
+				android:background="#00000000"
+				android:textColor="#FF000000"
+				android:id="@+id/cancel"
+				android:singleLine="true"/>
+
+			<View
+				android:layout_height="0dp"
+				android:layout_width="0dp"
+				android:visibility="invisible"
+				android:layout_weight="1.0"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="64dp"
+				android:clickable="true"
+				android:foreground="?android:attr/selectableItemBackground"
+				android:text="文件"
+				android:background="#00000000"
+				android:textColor="#FF000000"
+				android:visibility="visible"
+				android:singleLine="true"
+				android:id="@+id/file"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="64dp"
+				android:clickable="true"
+				android:foreground="?android:attr/selectableItemBackground"
+				android:text="文件夹"
+				android:background="#00000000"
+				android:textColor="#FF000000"
+				android:singleLine="true"
+				android:id="@+id/dir"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</android.support.v7.widget.CardView>
+

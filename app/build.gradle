@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.3.1"
+
+    defaultConfig {
+        applicationId "pangolin.ax.plus"
+        minSdkVersion 14
+        targetSdkVersion 25
+		multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+			multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	compile 'org.ow2.asm:asm-debug-all:5.0.3'
+	compile 'com.github.bumptech.glide:glide:4.9.0'
+	compile 'com.rom4ek:arcnavigationview:1.0.3'
+	compile 'com.android.support:multidex:+'
+	compile 'com.android.support:design:+'
+	compile 'com.google.android.gms:play-services-ads:+'
+	compile 'com.android.support:cardview-v7:+'
+	compile 'com.android.support:recyclerview-v7:+'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

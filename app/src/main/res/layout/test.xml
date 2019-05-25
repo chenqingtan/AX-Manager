@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="24dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center|center_vertical|center_horizontal"
+			android:padding="5dp">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="标题"
+				android:layout_marginTop="10dp"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:gravity="left"
+				android:textSize="20sp"
+				android:textColor="#FF000000"
+				android:id="@+id/Title"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Dex_Smali编辑器"
+				android:background="?android:attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:gravity="left|center_vertical"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Dex_Dexlib编辑器"
+				android:background="?android:attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:gravity="left"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="翻译修改模式"
+				android:background="?android:attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:gravity="left"/>
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Dex2Jar"
+				android:background="?android:attr/selectableItemBackground"
+				android:layout_marginTop="10dp"
+				android:gravity="left"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
